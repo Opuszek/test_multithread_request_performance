@@ -1,0 +1,20 @@
+A first attempt at a program to check the efficiency of repetive GET (so far) requests in context of multithreading.
+
+It should be run with arguments:
+myApiUrl numbersOfThreadsSeparatedByComma NumberOfAttempts
+
+Like:
+https://myapi.com/ 1,5,10 60
+
+In response it will log each attempt.
+
+Like:
+INFO: Attempt with 1 threads finished in 11.788000 seconds
+It returned 60 valid and 0 invalid results
+INFO: Attempt with 5 threads finished in 2.396000 seconds
+It returned 60 valid and 0 invalid results
+INFO: Attempt with 10 threads finished in 1.088000 seconds
+It returned 60 valid and 0 invalid results
+
+
+It will be moved to JMH in the future como dios manda.
